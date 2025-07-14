@@ -4,11 +4,8 @@
 
 
 # Put all needed objects from the json into lists
-listOfContainers=($(jq -r '.database.containers[].grep' containers_solan_extended.json))
-listOfNics=($(jq -r '.database.containers[].NIC' containers_solan_extended.json))
-listOfPorts=($(jq -r '.database.containers[].port' containers_solan_extended.json))
-listOfSources=($(jq -r '.database.containers[].from' containers_solan_extended.json))
-listOfDestinations=($(jq -r '.database.containers[].to' containers_solan_extended.json))
+I take every needed object from the json and put it in a list so it will be easier to work with.
+Every command have the same structure: listName = ($(jq -r '.database.containers[].<object>' FileName.json))
 
 
 # Spaces for cleaner view in the CLI
