@@ -1,0 +1,81 @@
+{
+	"database": {
+		
+		"name": "Containers for checking",
+		"containers": [
+			{
+				"Name": "RtcStatus",			"grep": "rtc",				"port": 50105,	"NIC": "eth0",	"from": "rtc",	"to":"moav"
+			},
+			{
+				"Name": "RtcCmd",				"grep": "rtc",				"port": 50104,	"NIC": "eth0",	"from": "moav",	"to":"rtc"
+			},
+			{
+				"Name": "PayloadControl",		"grep": "rtc",				"port": 50304,	"NIC": "eth0",	"from": "moav",	"to":"rtc"
+			},
+			{
+				"Name": "PayloadControl",		"grep": "rtc",				"port": 50305,	"NIC": "eth0",	"from": "rtc",	"to":"moav"
+			},
+			{
+				"Name": "MoavUplink",			"grep": "rtc",				"port": 50540,	"NIC": "eth0",	"from": "moav",	"to":"rtc"
+			},
+			{
+				"Name": "RtcComboxUplink",		"grep": "rtc",				"port": 50140,	"NIC": "eth0",	"from": "rtc",	"to":"combox"
+			},
+			{
+				"Name": "RtcSatUplink",			"grep": "rtc",				"port": 55044,	"NIC": "eth0",	"from": "rtc",	"to":"satcom"
+			},
+			{
+				"Name": "ComboxStatus",			"grep": "combox",			"port": 50205,	"NIC": "eth0",	"from": "combox",	"to":"moav"
+			},
+			{
+				"Name": "ComboxCmd",			"grep": "combox",			"port": 50204,	"NIC": "eth0",	"from": "moav",	"to":"combox"
+			},
+			{
+				"Name": "ComboxDownlink",		"grep": "combox",			"port": 55020,	"NIC": "XXXX",	"from": "gdt",	"to":"combox"
+			},
+			{
+				"Name": "ComboxUplink",			"grep": "combox",			"port": 55040,	"NIC": "XXXX",	"from": "combox",	"to":"gdt"
+			},
+			{
+				"Name": "LrDiscovery",			"grep": "combox",			"port": 53000,	"NIC": "XXXX",	"from": "gdt",	"to":"combox"
+			},
+			{
+				"Name": "RtcComboxUplink",		"grep": "combox",			"port": 50140,	"NIC": "eth0",	"from": "rtc",	"to":"combox"
+			},
+			{
+				"Name": "MrDiscovery",			"grep": "combox",			"port": 51000,	"NIC": "XXXX",	"from": "gdt",	"to":"combox"
+			},
+			{
+				"Name": "SimMainStatus",		"grep": "orbiter4mk2sim",	"port": 56102,	"NIC": "eth0",	"from": "sim",	"to":"moav"
+			},
+			{
+				"Name": "SimMainCmd",			"grep": "orbiter4mk2sim",	"port": 56101,	"NIC": "eth0",	"from": "moav",	"to":"sim"
+			},
+			{
+				"Name": "UavLosDownlink",		"grep": "orbiter4mk2gw",	"port": 55020,	"NIC": "eth0",	"from": "uav",	"to":"adt"
+			},
+			{
+				"Name": "UavLosUplink",			"grep": "orbiter4mk2gw",	"port": 55040,	"NIC": "eth0",	"from": "adt",	"to":"uav"
+			},
+			{
+				"Name": "AdtDiscovery",			"grep": "orbiter4mk2gw",	"port": 57000,	"NIC": "eth0",	"from": "adt",	"to":"uav"
+			},
+			{
+				"Name": "UavDirectDownlink",	"grep": "orbiter4mk2gw",	"port": 55030,	"NIC": "eth0",	"from": "uav",	"to":"moav"
+			},
+			{
+				"Name": "UavDirectUplink",		"grep": "orbiter4mk2gw",	"port": 55050,	"NIC": "eth0",	"from": "moav",	"to":"uav"
+			},
+			{
+				"Name": "InstructorCmd",		"grep": "orbiter4mk2sim",	"port": 56050,	"NIC": "eth0",	"from": "uav",	"to":"moav"
+			},
+			{
+				"Name": "InstructorCmd",		"grep": "orbiter4mk2sim",	"port": 56030,	"NIC": "eth0",	"from": "moav",	"to":"uav"
+			}
+		]
+	}
+}
+
+
+
+

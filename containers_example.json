@@ -1,0 +1,27 @@
+{
+	"database": {
+		
+		"name": "Containers for checking",
+		"containers": [
+			{
+				"Name": "Check Container #1",	"grep": "storage",	"port": 50105,	"NIC": "eth0",	"from": "NetApp",		"to":"NTP"
+			},
+			{
+				"Name": "Check Container #2",	"grep": "clock",	"port": 50104,	"NIC": "eth1",	"from": "NTP",			"to":"NetApp"
+			},
+			{
+				"Name": "Check Container #3",	"grep": "clock",	"port": 50304,	"NIC": "eth0",	"from": "NTP",			"to":"ClockScreen"
+			},
+			{
+				"Name": "Check Container #4",	"grep": "pc",		"port": 50305,	"NIC": "eth1",	"from": "ITComputer",	"to":"NetApp"
+			},
+			{
+				"Name": "Check Container #5",	"grep": "clock",	"port": 50540,	"NIC": "eth1",	"from": "NTP",			"to":"ClockScreen"
+			}
+		]
+	}
+}
+
+
+
+
