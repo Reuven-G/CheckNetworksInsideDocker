@@ -3,19 +3,19 @@
 
 
 # Put all container names into a list
-listOfContainers=($(jq -r '.database.containers[].grep' containers_solan_extended.json))
+listOfContainers=($(jq -r '.database.containers[].grep' containers_example.json))
 
 # Put all NICs into a list
-listOfNics=($(jq -r '.database.containers[].NIC' containers_solan_extended.json))
+listOfNics=($(jq -r '.database.containers[].NIC' containers_example.json))
 
 # Put all ports into a list
-listOfPorts=($(jq -r '.database.containers[].port' containers_solan_extended.json))
+listOfPorts=($(jq -r '.database.containers[].port' containers_example.json))
 
 # Put all sources into a list
-listOfSources=($(jq -r '.database.containers[].from' containers_solan_extended.json))
+listOfSources=($(jq -r '.database.containers[].from' containers_example.json))
 
 # Put all destinations into a list
-listOfDestinations=($(jq -r '.database.containers[].to' containers_solan_extended.json))
+listOfDestinations=($(jq -r '.database.containers[].to' containers_example.json))
 
 
 # Spaces
